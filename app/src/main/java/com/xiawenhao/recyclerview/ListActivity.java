@@ -9,12 +9,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ListActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyclerview);
         recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.setAdapter();
+        //recyclerView.setAdapter();
     }
 
-    }
+}

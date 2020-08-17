@@ -33,7 +33,7 @@ public class RecyclerView {
         this.description = description;
     }
 
-    private  int count;
+    private int count;
     private String description;
 
 }
