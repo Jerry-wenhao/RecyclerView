@@ -11,6 +11,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class MultipleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    public MultipleAdapter(List<Data> dataList) {
+        this.dataList = dataList;
+    }
+
     private List<Data> dataList;
 
     public static class ItemViewHolder extends RecyclerView.ViewHolder {
@@ -32,7 +36,7 @@ public class MultipleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         public HeaderViewHolder(View view) {
             super(view);
-            header = view.findViewById(R.id.header);
+            header = view.findViewById(R.id.data_header);
         }
     }
 
@@ -43,7 +47,7 @@ public class MultipleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         switch (viewType) {
             case Data.TYPE_HEADER:
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.header_line, parent, false);
-                return new ItemViewHolder(view);
+                return new HeaderViewHolder(view);
             case Data.TYPE_ITEM:
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_details, parent, false);
                 return new ItemViewHolder(view);
