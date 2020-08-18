@@ -12,11 +12,11 @@ import java.util.List;
 
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ItemViewHolder> {
-    public MyAdapter(List<RecyclerView> recyclerViewsList) {
-        this.recyclerViewsList = recyclerViewsList;
+    public MyAdapter(List<Data> dataList) {
+        this.dataList = dataList;
     }
 
-    private List<RecyclerView> recyclerViewsList;
+    private List<Data> dataList;
 
     @NonNull
     @Override
@@ -28,16 +28,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ItemViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
-        RecyclerView recyclerView = recyclerViewsList.get(position);
-        holder.title.setText(recyclerView.getTitle());
-        holder.count.setText(recyclerView.getCount());
-        holder.description.setText(recyclerView.getDescription());
+        Data data = dataList.get(position);
+        holder.title.setText(data.getTitle());
+        holder.count.setText(String.valueOf(data.getCount()));
+        holder.description.setText(data.getDescription());
 
     }
 
     @Override
     public int getItemCount() {
-        return recyclerViewsList.size();
+        return dataList.size();
     }
 
     public static class ItemViewHolder extends RecyclerView.ViewHolder {

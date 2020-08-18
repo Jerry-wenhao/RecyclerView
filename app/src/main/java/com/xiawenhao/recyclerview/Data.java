@@ -1,7 +1,15 @@
 package com.xiawenhao.recyclerview;
 
-public class RecyclerView {
-    private String title;
+public class Data {
+    public String title;
+    public String description;
+    public int count;
+
+    public Data(String title, String description, int count) {
+        this.title = title;
+        this.description = description;
+        this.count = count;
+    }
 
     public String getTitle() {
         return title;
@@ -9,14 +17,6 @@ public class RecyclerView {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
     }
 
     public String getDescription() {
@@ -27,13 +27,16 @@ public class RecyclerView {
         this.description = description;
     }
 
-    public RecyclerView(String title, int count, String description) {
-        this.title = title;
-        this.count = count;
-        this.description = description;
+    public int getCount() {
+        return count;
     }
 
-    private int count;
-    private String description;
+    public void setCount(int count) {
+        this.count = count;
+    }
+
 
 }
+
+
+
