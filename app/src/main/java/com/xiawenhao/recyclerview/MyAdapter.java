@@ -12,7 +12,7 @@ import java.util.List;
 
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ItemViewHolder> {
-    public MyAdapter(List<Data> dataList) {
+    public MyAdapter(ListActivity listActivity, List<Data> dataList) {
         this.dataList = dataList;
     }
 
