@@ -7,7 +7,8 @@
     <dimen name="count_margin">40dp</dimen>
     <dimen name="title_start">40dp</dimen>
     <dimen name="item_bottom">24dp</dimen>
-    <dimen name="title_size">8sp</dimen>
+    <dimen name="title_size">16sp</dimen>
     <dimen name="item_radius">8dp</dimen>
     <dimen name="item_width">1dp</dimen>
+    <dimen name="description_top">16dp</dimen>
 </resources>
