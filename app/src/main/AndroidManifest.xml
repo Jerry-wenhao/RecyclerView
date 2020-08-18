@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MultipleListActivity" />
         <activity android:name=".ListActivity"
             android:icon="@drawable/ic_launcher_foreground">
 
