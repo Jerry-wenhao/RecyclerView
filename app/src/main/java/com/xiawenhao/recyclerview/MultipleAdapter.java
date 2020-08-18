@@ -36,7 +36,7 @@ public class MultipleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         public HeaderViewHolder(View view) {
             super(view);
-            header = view.findViewById(R.id.data_header);
+            header = view.findViewById(R.id.header);
         }
     }
 

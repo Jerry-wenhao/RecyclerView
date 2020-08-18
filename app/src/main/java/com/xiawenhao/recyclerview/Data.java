@@ -10,6 +10,7 @@ public class Data {
     public String title;
     public String description;
     public int count;
+    public String avatar;
 
     public Data(int type, String title, String description, int lastDataCount, int count) {
         this.type = type;
@@ -44,6 +45,14 @@ public class Data {
 
     public void setCount(int count) {
         this.count = count;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 
     public static int lastDataCount = 0;
