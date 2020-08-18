@@ -12,4 +12,6 @@
     <dimen name="item_width">1dp</dimen>
     <dimen name="description_top">16dp</dimen>
     <dimen name="header_size">30</dimen>
+    <dimen name="header_margin">100dp</dimen>
+    <dimen name="header_start">120dp</dimen>
 </resources>
