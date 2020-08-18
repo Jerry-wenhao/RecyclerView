@@ -9,15 +9,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.ButterKnife;
+
 
 public class ListActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
+    ArrayList<Data> dataList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyclerview);
-        recyclerView = findViewById(R.id.recycler_view);
+        ButterKnife.bind(this);
         List<Data> dataList = new ArrayList<>();
 
 
