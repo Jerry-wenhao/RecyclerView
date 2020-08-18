@@ -5,4 +5,5 @@
     <string name="description">description</string>
     <string name="header">This is header</string>
     <string name="multiple_view">MultipleView</string>
+    <string name="image_view">ImageRecyclerView</string>
 </resources>
