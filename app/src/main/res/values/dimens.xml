@@ -15,4 +15,11 @@
     <dimen name="header_margin">100dp</dimen>
     <dimen name="header_start">120dp</dimen>
     <dimen name="recycler">0dp</dimen>
+    <dimen name="image">100dp</dimen>
+    <dimen name="image_start">12dp</dimen>
+    <dimen name="image_top">12dp</dimen>
+    <dimen name="title_image_start">20dp</dimen>
+    <dimen name="title_top">16dp</dimen>
+    <dimen name="count_bottom">20dp</dimen>
+    <dimen name="desc_right">40dp</dimen>
 </resources>

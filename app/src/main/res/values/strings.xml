@@ -6,4 +6,5 @@
     <string name="header">This is header</string>
     <string name="multiple_view">MultipleView</string>
     <string name="image_view">Image RecyclerView</string>
+    <string name="image_link">avatar</string>
 </resources>
