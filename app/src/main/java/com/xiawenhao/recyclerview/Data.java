@@ -4,14 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Data {
+    public static final int TYPE_ITEM = 0;
+    public static final int TYPE_HEADER = 1;
+
+    public int type;
     public String title;
     public String description;
     public int count;
 
-    public Data(String title, String description, int lastDataCount, int count) {
+    public Data(int type, String title, String description, int lastDataCount, int count) {
+        this.type = type;
         this.title = title;
         this.description = description;
         this.count = count;
+    }
+
+    public int getType() {
+        return type;
     }
 
     public String getTitle() {
@@ -39,11 +48,14 @@ public class Data {
     }
 
     public static int lastDataCount = 0;
+
     static ArrayList<Data> createDataList(int size) {
         List<Data> dataList = new ArrayList<>();
+        dataList.add(new Data(TYPE_HEADER, "This is header", null, lastDataCount, lastDataCount++));
         for (int i = 1; i < size + 1; i++) {
-            dataList.add(new Data("Title"+ lastDataCount, "Description" + lastDataCount, lastDataCount, lastDataCount++));
+            dataList.add(new Data(TYPE_ITEM, "Title" + lastDataCount, "Description" + lastDataCount, lastDataCount, lastDataCount++));
         }
+        lastDataCount = 0;
         return (ArrayList<Data>) dataList;
     }
 
