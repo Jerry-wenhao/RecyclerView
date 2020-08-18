@@ -27,7 +27,7 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recyclerview);
         ButterKnife.bind(this);
 
-        dataList = Data.createDataList(15);
+        dataList = Data.creatMultipleList(15);
         MyAdapter myAdapter = new MyAdapter(this, dataList);
         recyclerView.setAdapter(myAdapter);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);

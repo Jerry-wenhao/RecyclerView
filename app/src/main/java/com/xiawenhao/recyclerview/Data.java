@@ -1,7 +1,6 @@
 package com.xiawenhao.recyclerview;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Data {
     public static final int TYPE_ITEM = 0;
@@ -49,14 +48,14 @@ public class Data {
 
     public static int lastDataCount = 0;
 
-    static ArrayList<Data> createDataList(int size) {
-        List<Data> dataList = new ArrayList<>();
+    static ArrayList<Data> creatMultipleList(int size) {
+        ArrayList<Data> dataList = new ArrayList<>();
         dataList.add(new Data(TYPE_HEADER, "This is header", null, lastDataCount, lastDataCount++));
         for (int i = 1; i < size + 1; i++) {
             dataList.add(new Data(TYPE_ITEM, "Title" + lastDataCount, "Description" + lastDataCount, lastDataCount, lastDataCount++));
         }
         lastDataCount = 0;
-        return (ArrayList<Data>) dataList;
+        return dataList;
     }
 
 
