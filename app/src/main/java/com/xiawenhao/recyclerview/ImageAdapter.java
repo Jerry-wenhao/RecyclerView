@@ -53,11 +53,11 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view;
+        View view = null;
         switch (viewType) {
             case Data.TYPE_HEADER:
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.header_line, parent, false);
-                return new ItemViewHolder.HeaderViewHolder(view);
+                return new MultipleAdapter.HeaderViewHolder(view);
             case Data.TYPE_ITEM:
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.image_list, parent, false);
                 return new ItemViewHolder(view);

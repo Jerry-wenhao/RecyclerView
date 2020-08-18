@@ -3,6 +3,7 @@ package com.xiawenhao.recyclerview;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -23,6 +24,9 @@ public class ImageListActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         dataList = Data.creatMultipleList(100);
-
+        ImageAdapter imageAdapter = new ImageAdapter(this,dataList);
+        recyclerView.setAdapter(imageAdapter);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
     }
 }

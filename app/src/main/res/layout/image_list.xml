@@ -16,6 +16,7 @@
         android:layout_height="@dimen/image"
         android:layout_marginStart="@dimen/image_start"
         android:layout_marginTop="@dimen/image_top"
+        android:contentDescription="@string/image_link"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
