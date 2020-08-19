@@ -25,7 +25,7 @@
         android:id="@+id/header_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="@dimen/button_second"
         android:background="@drawable/button"
         android:text="@string/multiple_view"
         android:textAllCaps="false"

@@ -20,7 +20,7 @@ public class ImageListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.image_list);
+        setContentView(R.layout.activity_recyclerview);
         ButterKnife.bind(this);
 
         dataList = Data.creatMultipleList(100);

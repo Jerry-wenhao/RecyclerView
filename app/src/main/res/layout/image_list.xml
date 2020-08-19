@@ -18,8 +18,7 @@
         android:layout_marginTop="@dimen/image_top"
         android:contentDescription="@string/image_link"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/title"
@@ -31,7 +30,7 @@
         app:layout_constraintTop_toTopOf="@+id/image" />
 
     <TextView
-        android:id="@+id/count"
+        android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/title_image_start"
@@ -40,7 +39,7 @@
         app:layout_constraintStart_toEndOf="@+id/image" />
 
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top"

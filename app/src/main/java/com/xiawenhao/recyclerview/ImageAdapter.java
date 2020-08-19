@@ -39,15 +39,15 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
         }
 
-        public static class HeaderViewHolder extends RecyclerView.ViewHolder {
-            TextView header;
+    }
 
-            public HeaderViewHolder(View view) {
-                super(view);
-                header = view.findViewById(R.id.header);
-            }
+    public static class HeaderViewHolder extends RecyclerView.ViewHolder {
+        TextView header;
+
+        public HeaderViewHolder(View view) {
+            super(view);
+            header = view.findViewById(R.id.header);
         }
-
     }
 
     @NonNull
@@ -57,7 +57,7 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         switch (viewType) {
             case Data.TYPE_HEADER:
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.header_line, parent, false);
-                return new MultipleAdapter.HeaderViewHolder(view);
+                return new HeaderViewHolder(view);
             case Data.TYPE_ITEM:
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.image_list, parent, false);
                 return new ItemViewHolder(view);
@@ -88,7 +88,7 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         if (data != null) {
             switch (data.type) {
                 case Data.TYPE_HEADER:
-                    ((ItemViewHolder.HeaderViewHolder) holder).header.setText(data.getTitle());
+                    ((HeaderViewHolder) holder).header.setText(data.getTitle());
                     break;
                 case Data.TYPE_ITEM:
                     ((ItemViewHolder) holder).title.setText(data.getTitle());
