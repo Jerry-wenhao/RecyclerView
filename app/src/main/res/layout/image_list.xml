@@ -26,6 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/title_image_start"
         android:layout_marginTop="@dimen/title_top"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/border_color"
         app:layout_constraintStart_toEndOf="@+id/image"
         app:layout_constraintTop_toTopOf="@+id/image" />
 
@@ -35,6 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/title_image_start"
         android:layout_marginBottom="@dimen/count_bottom"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/border_color"
         app:layout_constraintBottom_toBottomOf="@+id/image"
         app:layout_constraintStart_toEndOf="@+id/image" />
 
@@ -44,6 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top"
         android:layout_marginEnd="@dimen/desc_right"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/border_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
